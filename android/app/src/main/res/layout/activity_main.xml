@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout_main"
+    tools:context=".MainActivity"
+    android:background="@drawable/homepage_3"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:id="@+id/lin1_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/activity_fragment_ad"
+            android:layout_width="match_parent"
+            android:layout_height="250px" />
+        <include layout="@layout/activity_main_homepage"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressload_main"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/txt_phantram_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0% Đang kiểm tra thông tin"
+        android:textColor="#000"
+        android:visibility="gone"
+        />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="#fffec7">
+        <include layout="@layout/scrollview_menu_main"/>
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

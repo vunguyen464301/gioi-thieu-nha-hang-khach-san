@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myhome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Trang cá nhân"
+            />
+        <item
+            android:id="@+id/nav_phongdadat"
+            android:icon="@drawable/ic_hotel_black_24dp"
+            android:title="Phòng đã đặt" />
+        <item
+            android:id="@+id/nav_bandadat"
+            android:icon="@drawable/ic_restaurant_black_24dp"
+            android:title="Bàn đã đặt" />
+        <item
+            android:id="@+id/nav_shopping"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Shopping" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cài đặt" />
+        <item
+            android:id="@+id/nav_minigame"
+            android:icon="@drawable/ic_videogame_asset_black_24dp"
+            android:title="Minigame" />
+    </group>
+
+    <item android:title="Hỗ trợ , phản hồi và đăng nhập">
+        <menu>
+            <item
+                android:id="@+id/nav_CSKH"
+                android:icon="@drawable/ic_local_hospital_black_24dp"
+                android:title="Chăm sóc khách hàng" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_accessibility_black_24dp"
+                android:title="Hỗ trợ" />
+
+            <item
+                android:id="@+id/nav_login_logout"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Đăng nhập " />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Phản hồi ứng dụng" />
+            <item
+                android:id="@+id/nav_out"
+                android:icon="@drawable/ic_looks_black_24dp"
+                android:title="Thoát" />
+
+
+        </menu>
+    </item>
+
+</menu>

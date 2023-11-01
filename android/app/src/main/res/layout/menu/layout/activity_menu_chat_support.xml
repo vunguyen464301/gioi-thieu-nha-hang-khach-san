@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuCHATSupportActivity"
+    android:background="@drawable/homepage_3"
+    android:paddingTop="5px"
+    android:paddingLeft="10px"
+    android:paddingRight="10px"
+    android:paddingBottom="5px">
+
+    <ProgressBar
+        android:id="@+id/load_progress_Menu_support"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+    <ListView
+        android:id="@+id/listviewChat_Menu_support"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/txtDangsoantin_Menu_support"/>
+    <TextView
+        android:id="@+id/txtDangsoantin_Menu_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đang soạn tin"
+        android:layout_marginLeft="30px"
+        android:textStyle="italic"
+        android:layout_above="@id/reMenu_support"
+        android:visibility="invisible"
+        />
+    <RelativeLayout
+        android:id="@+id/reMenu_support"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <EditText
+          android:id="@+id/edtmess_Menu_support"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/imgbtnsend_Menu_support"
+            android:maxLength="25"/>
+        <ImageButton
+            android:id="@+id/imgbtnsend_Menu_support"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:background="@drawable/ic_menu_send"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

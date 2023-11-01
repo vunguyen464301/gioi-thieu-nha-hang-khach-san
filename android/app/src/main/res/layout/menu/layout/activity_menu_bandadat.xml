@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.MenuBandadatActivity"
+    android:orientation="horizontal"
+    android:paddingTop="5px"
+    android:paddingRight="10px"
+    android:paddingLeft="10px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homepage_10">
+
+        <ProgressBar
+            android:id="@+id/load_progress_menu_bandadat"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/re1MenuBandadat"
+            android:layout_above="@id/reMenuBandadat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1_menu_bandadat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BAN ĐÃ ĐẶT"
+                android:layout_centerHorizontal="true"/>
+            <ListView
+                android:id="@+id/listview_menu_bandadat"
+                android:layout_marginTop="50px"
+                android:layout_below="@id/txt1_menu_bandadat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/reMenuBandadat"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20px">
+            <Button
+                android:id="@+id/btn_backMenuBandadat"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/homepage_8"
+                android:text="Quay về"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

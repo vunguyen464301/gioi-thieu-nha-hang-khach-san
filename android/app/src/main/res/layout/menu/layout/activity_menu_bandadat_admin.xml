@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu.MenuBandadatADMINActivity"
+    android:orientation="horizontal"
+    android:paddingTop="5px"
+    android:paddingRight="10px"
+    android:paddingLeft="10px"
+    android:paddingBottom="5px">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/homepage_10">
+        <ProgressBar
+            android:id="@+id/load_progress_bandadat_Admin"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/txt1_menu_bandadat_Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BÀN ĐÃ ĐẶT"
+                android:layout_centerHorizontal="true"/>
+            <ListView
+                android:id="@+id/listview_menu_bandadat_Admin"
+                android:layout_below="@id/txt1_menu_bandadat_Admin"
+                android:layout_marginTop="50px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

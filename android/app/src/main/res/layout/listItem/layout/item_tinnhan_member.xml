@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_item_Tinnhan_Admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage_11"
+        android:padding="20px"
+      />
+    <TextView
+        android:id="@+id/txt_item_Tinnhan_Member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage_12"
+        android:layout_alignParentRight="true"
+        android:padding="20px"/>
+</RelativeLayout>

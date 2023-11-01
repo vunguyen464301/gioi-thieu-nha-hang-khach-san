@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chitiet_Fragment_Homepage.Chitiet_Fragment_Homepage_2"
+    android:padding="10px"
+    android:background="@drawable/homepage_3">
+
+    <LinearLayout
+        android:layout_above="@id/btnBackChitietFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="20px">
+        <TextView
+            android:id="@+id/txtthunghiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_datban"
+            android:layout_marginTop="10px"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <ListView
+            android:id="@+id/listView_fragment_datban_chitiet"
+            android:layout_marginTop="5px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/homepage_9"
+            android:padding="5px">
+        </ListView>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnBackChitietFragment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:background="@drawable/homepage_8"
+        android:textColor="@color/colorSelectedTab"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+</RelativeLayout>
